@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkj25unlyk4e8"
-path="res://.godot/imported/pixil-frame-0 (2).png-77423fb76696680200d4d667cdce4fef.ctex"
+uid="uid://7x8xxhox0mut"
+path="res://.godot/imported/cowGame.png-9d20155dc41ebc5fc478b151ff9f2112.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mathias/pixil-frame-0 (2).png"
-dest_files=["res://.godot/imported/pixil-frame-0 (2).png-77423fb76696680200d4d667cdce4fef.ctex"]
+source_file="res://Nav/cowGame.png"
+dest_files=["res://.godot/imported/cowGame.png-9d20155dc41ebc5fc478b151ff9f2112.ctex"]
 
 [params]
 
