@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddovgsf5c0x5l"]
+
+[ext_resource type="PackedScene" uid="uid://chs0senq6xkll" path="res://ship_slay.tscn" id="1_8hls1"]
+
+[node name="Game" type="Node2D"]
+
+[node name="ship Slay" parent="." instance=ExtResource("1_8hls1")]
+position = Vector2(549, 271)

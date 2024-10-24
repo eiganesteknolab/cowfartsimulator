@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://chs0senq6xkll"]
+
+[ext_resource type="Texture2D" uid="uid://px6gsjbahhn0" path="res://Ship slay.png" id="1_rxniq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0q2re"]
+atlas = ExtResource("1_rxniq")
+region = Rect2(0, 0, 96, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ch4r"]
+atlas = ExtResource("1_rxniq")
+region = Rect2(96, 0, 96, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fc6e4"]
+atlas = ExtResource("1_rxniq")
+region = Rect2(192, 0, 96, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nnieo"]
+atlas = ExtResource("1_rxniq")
+region = Rect2(0, 34, 96, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ft430"]
+atlas = ExtResource("1_rxniq")
+region = Rect2(96, 34, 96, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_frp61"]
+atlas = ExtResource("1_rxniq")
+region = Rect2(192, 34, 96, 34)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jw8ci"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0q2re")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ch4r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fc6e4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nnieo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ft430")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_frp61")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_osol6"]
+size = Vector2(76.5, 23.5)
+
+[node name="ship Slay" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jw8ci")
+autoplay = "default"
+frame_progress = 0.461879
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6.75, 3.75)
+shape = SubResource("RectangleShape2D_osol6")
