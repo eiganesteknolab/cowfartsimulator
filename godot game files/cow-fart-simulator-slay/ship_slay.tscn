@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://chs0senq6xkll"]
+[gd_scene load_steps=11 format=3 uid="uid://chs0senq6xkll"]
 
+[ext_resource type="Script" path="res://ship_slay.gd" id="1_fo5bh"]
 [ext_resource type="Texture2D" uid="uid://px6gsjbahhn0" path="res://Ship slay.png" id="1_rxniq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0q2re"]
@@ -56,11 +57,12 @@ animations = [{
 size = Vector2(76.5, 23.5)
 
 [node name="ship Slay" type="CharacterBody2D"]
+script = ExtResource("1_fo5bh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jw8ci")
 autoplay = "default"
-frame_progress = 0.461879
+frame_progress = 0.35505
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(6.75, 3.75)
