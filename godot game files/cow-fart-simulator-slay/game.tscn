@@ -1,8 +1,28 @@
-[gd_scene load_steps=2 format=3 uid="uid://ddovgsf5c0x5l"]
+[gd_scene load_steps=4 format=3 uid="uid://ddovgsf5c0x5l"]
 
-[ext_resource type="PackedScene" uid="uid://chs0senq6xkll" path="res://ship_slay.tscn" id="1_8hls1"]
+[ext_resource type="Texture2D" uid="uid://px6gsjbahhn0" path="res://Ship slay.png" id="1_x85vj"]
+[ext_resource type="PackedScene" uid="uid://b26eytqp468ih" path="res://player.tscn" id="2_vpohu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_27bl3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_x85vj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
 
 [node name="Game" type="Node2D"]
 
-[node name="ship Slay" parent="." instance=ExtResource("1_8hls1")]
-position = Vector2(549, 271)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_27bl3")
+
+[node name="player" parent="." instance=ExtResource("2_vpohu")]
+position = Vector2(1, 2)
